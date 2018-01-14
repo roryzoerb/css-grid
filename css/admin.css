@@ -1,0 +1,33 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px 3fr 3fr;
+  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-areas: "header header header" "sidebar content content" "footer footer footer";
+}
+
+.item1 {
+  grid-area: header;
+  background: rgba(41, 44, 47, .5);
+}
+
+.item2 {
+  grid-area: sidebar;
+  background: rgba(33, 33, 33, 1);
+}
+
+.item3 {
+  grid-area: content;
+  background: rgba(0, 0, 0, 1);
+}
+
+.item4 {
+  grid-area: footer;
+  background: rgba(0, 0, 0, .5);
+}
